@@ -1,0 +1,38 @@
+@-webkit-keyframes rotation {
+	0% {
+		margin-left: 0;
+	}
+
+	100% {
+		margin-left: 95%;
+	}
+
+}
+
+.box {
+	width: 100px; height: 100px; background-color: blue; 
+	border: solid; border-radius: 5px;
+	font-size: 0.5px;
+	animation-name: rotation;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-duration: 5s;
+	animation-play-state: running;
+
+	transition-property: all;
+	transition-duration: 0.1s;
+
+
+}
+
+.box:hover {
+	animation-play-state: paused;
+	transform: scale(4.1);
+
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&family=Epilogue:ital,wght@1,300&display=swap);
+
+div {font-family: 'Baloo Tammudu 2', cursive;}
